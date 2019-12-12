@@ -1,0 +1,163 @@
+.food-div {
+  @include flex-mixin(1075px);
+  margin: 129px auto 0 auto;
+  justify-content: space-between;
+}
+
+.food-div-item {
+  max-width: 303px;
+
+  & > a > img {
+    max-width: 134px;
+    height: 134px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+  }
+
+  & > a > h3 {
+    color: #ffffff;
+    font-family: $robot-slab;
+    font-size: 24px;
+    font-weight: $fw-700;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  & > p {
+    margin-top: 15px;
+    font-family: $robot;
+    font-size: 15px;
+    font-weight: $fw-300;
+    line-height: 30px;
+    color: white;
+    text-align: center;
+  }
+}
+
+
+.our-news-content {
+  @include flex-mixin(1180px);
+  margin: 84px auto 0 auto;
+}
+
+.food-resept {
+  max-width: 371px;
+  margin-left: 29px;
+
+  &:nth-child(1) {
+    margin-left: 0;
+  }
+
+  & > h3 {
+    font-family: $robot-slab;
+    font-weight: $fw-700;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+    color: #31353e;
+  }
+
+  & > p {
+    max-width: 288px;
+    margin: 10px auto 0 auto;
+    text-align: center;
+    font-size: 15px;
+    font-family: $robot;
+    font-weight: $fw-300;
+    line-height: 1.5;
+    color: #31353e;
+  }
+}
+
+.food-resept-link {
+  @include read-more(179px)
+  @include read-more-text(#4e5159, $robot, 15px, $fw-300);
+  margin-top: 39px;
+
+  &:hover {
+    @include hover(black);
+  }
+}
+
+.main-gall {
+  padding: 44px 0;
+}
+
+.wrap-gall {
+  margin: 0 auto;
+  @include flex-mixin(1215px);
+
+  & > img {
+    max-width: 566px;
+    height: 421px;
+    border-radius: 10px;
+
+    &:nth-child(2) {
+      margin-left: 50px;
+    }
+
+    &:nth-child(3) {
+      margin-top: 50px;
+    }
+  }
+}
+
+.dscribe-content {
+  max-width: 566px;
+  margin-top: 20px;
+
+  &:nth-child(4) {
+    margin-top: 80px;
+  }
+
+  margin-left: 30px;
+
+  & > article > h3 {
+    color: #191b29;
+    font-family: $robot-slab;
+    font-size: 30px;
+    font-weight: $fw-700;
+    line-height: 48px;
+  }
+
+  & > article > p {
+    color: #191b29;
+    font-family: $robot;
+    font-size: 16px;
+    font-weight: $fw-300;
+    line-height: 1.5;
+    margin-top: 23px;
+  }
+}
+
+.sign-up-link {
+  @include read-more(213px);
+  @include read-more-text(#ffffff, $robot-slab, 18px, $fw-400);
+  margin: 48px 0 0 0;
+  border: 0;
+  line-height: 51px;
+  padding: 0;
+  height: 54px;
+  vertical-align: center;
+}
+
+.unique-link {
+  background-color: #dd4b2b;
+
+  &:hover {
+    transition: 0.3s ease;
+    background-color: rgba(221, 75, 43, 0.2);;
+    color: #dd4b2b;
+  }
+}
+
+.unique {
+  background-color: #4b4e73;
+
+  &:hover {
+    transition: 0.3s ease;
+    background-color: rgba(75, 78, 115, 0.2);
+    color: #4b4e73;
+  }
+}

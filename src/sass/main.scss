@@ -1,0 +1,18 @@
+@import "normalize/import-now";
+
+@import 'utils/variables';
+@import 'utils/mixims';
+
+@import 'base/basic';
+
+@import 'layout/Header/header';
+@import 'layout/Foter/footer';
+@import 'components/grid-components';
+
+@import 'pages/home';
+@import "media/320px-1120px";
+@import "media/580px-1120px";
+@import "media/690px-1212px";
+@import "media/742px-1120px";
+@import "media/899px-1114px";
+@import "media/min1113px";

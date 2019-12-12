@@ -1,0 +1,33 @@
+@mixin read-more($width) {
+  display: block;
+  margin: 79px auto 0 auto;
+  max-width: $width;
+  padding: 19px 0;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 27px;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  background-color: #ffffff;
+}
+
+@mixin read-more-text($color, $f-family,$size,$weight) {
+  color: $color;
+  font-family: $f-family;
+  font-size: $size;
+  text-align: center;
+  font-weight: $weight;
+}
+
+@mixin hover($text-color) {
+  transition: 0.3s ease;
+  border: 3px solid white;
+  background: rgba(0, 0, 0, 0);
+  color: $text-color;
+}
+
+@mixin flex-mixin($width) {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: $width;
+}
+

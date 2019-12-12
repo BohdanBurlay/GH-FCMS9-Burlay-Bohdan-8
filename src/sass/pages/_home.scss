@@ -1,0 +1,146 @@
+.wrap-content {
+  padding: 489px 0 138px 0;
+  background-image: url("../../src/img/Slice_5.jpg");
+  background-size: cover;
+
+  & > h1 {
+    text-align: center;
+    color: white;
+    font-weight: 300;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    font-size: 72px;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 48px;
+    font-family: $robot-slab;
+  }
+}
+
+.unusual-text-style {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.read-more-link {
+  @include read-more(213px);
+  @include read-more-text(#612316, $robot-slab, 18px, $fw-400);
+
+  &:hover {
+    @include hover(white);
+  }
+}
+
+.our-news-wrap {
+  padding: 82px 0 100px 0;
+  background-color: #edeff1;
+}
+
+.our-news-wrap-title {
+  color: #31353e;
+  font-family: $robot-slab;
+  font-size: 30px;
+  font-weight: $fw-700;
+  line-height: 24px;
+  text-align: center;
+}
+
+.newsletter {
+  padding: 95px 0 111px 0;
+  background-image: url("../../src/img/Slice_6.jpg");
+  background-size: cover;
+
+  & > h2 {
+    @extend .our-news-wrap-title;
+    color: white;
+  }
+}
+
+.newsletter-p {
+  max-width: 533px;
+  margin: 22px auto 0 auto;
+  color: #ffffff;
+  font-family: $robot;
+  font-size: 15px;
+  font-weight: $fw-300;
+  line-height: 24px;
+  text-align: center;
+}
+
+.sign-form-class {
+  display: flex;
+  max-width: 500px;
+  margin: 43px auto 0 auto;
+}
+
+.sign-form-email-class {
+  max-width: 310px;
+  height: 54px;
+  border-radius: 27px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.3);
+
+  &::placeholder {
+    color: #f3f4f6;
+    font-family: $robot-slab;
+    font-size: 18px;
+    font-weight: $fw-400;
+    line-height: 30px;
+    padding-left: 36px;
+  }
+
+  &:hover {
+    transition: 0.3s ease;
+    background: rgba(255, 255, 255, 0);
+  }
+}
+
+.sign-form-submit-class {
+  @include read-more-text(#612316, $robot-slab, 18px, $fw-400);
+  max-width: 210px;
+  z-index: 9999;
+  height: 54px;
+  margin-left: -50px;
+  border-radius: 27px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: #ffffff;
+  cursor: pointer;
+
+  &:hover {
+    transition: 0.3s ease;
+    color: white;
+    background-color: #612316;
+  }
+}
+
+.resept-jep {
+  padding: 98px 0;
+  background-color: #d75d0e;
+}
+
+.resept-jep-content {
+  max-width: 895px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  & > ul {
+    max-width: 200px;
+    text-align: center;
+
+    &:nth-child(1) {
+      margin-left: 0;
+    }
+
+    & > li > a {
+      @include read-more-text(#ffffff, $robot, 18px, $fw-400);
+      line-height: 36px;
+
+      &:hover {
+        transition: 0.3s ease;
+        color: antiquewhite;
+      }
+    }
+  }
+}
+

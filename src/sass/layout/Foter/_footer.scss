@@ -1,0 +1,17 @@
+footer {
+  padding: 92px 0 251px 0;
+  background-image: url("../../src/img/Slice_6.jpg");
+  background-size: cover;
+
+  & > p {
+    @include read-more-text(#ffffff, $robot, 18px, $fw-300);
+    line-height: 24px;
+    max-width: 695px;
+    margin: 0 auto;
+  }
+}
+
+.main-page-logo > a {
+  @include read-more-text(#ffffff, $robot, 18px, $fw-300);
+  font-weight: 700;
+}

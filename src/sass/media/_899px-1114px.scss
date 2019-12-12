@@ -1,0 +1,12 @@
+@media only screen and (min-width: 899px) and (max-width: 1114px) {
+  .our-news-content {
+    justify-content: space-around;
+  }
+  .food-resept {
+    margin-top: 0;
+
+    &:nth-child(3) {
+      margin-top: 20px;
+    }
+  }
+}

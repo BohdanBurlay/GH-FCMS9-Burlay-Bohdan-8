@@ -1,0 +1,46 @@
+@media only screen and (min-width: 690px) and (max-width: 898px) {
+  .food-div-item {
+    max-width: 230px;
+
+    &:nth-child(2) {
+      margin-top: 0;
+    }
+  }
+  .food-resept {
+    max-width: 300px;
+
+    &:nth-child(2) {
+      margin-top: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 690px) and (max-width: 1212px) {
+  .wrap-gall {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .wrap-gall > img:nth-child(2) {
+    order: 2;
+    margin: 0;
+    width: 40%;
+  }
+  .wrap-gall > img:nth-child(3) {
+    order: 3;
+    margin: 30px 0 0 0;
+    width: 40%;
+  }
+  .dscribe-content {
+    margin: 0;
+    width: 45%;
+    text-align: left;
+
+    &:nth-child(1) {
+      order: 1;
+    }
+
+    &:nth-child(4) {
+      order: 3;
+    }
+  }
+}
